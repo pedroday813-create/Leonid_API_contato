@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"  type="module" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+    <h1 class="titulo">Cosumindo API</h1>
+
+    <section class="quadrados">
+        <input id="nome" class="campo" type="text" placeholder="Nome">
+        <input id="email" class="campo" type="email" placeholder="Email">
+        <input id="telefone" class="campo" type="text" placeholder="Telefone">
+        <input id="endereco" class="campo" type="text" placeholder="Endereco">
+    </section>
+
+    <button id="salvar" class="botao-salvar">Salvar</button>
+
+    <table class="tabela-contatos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Endereco</th>
+            </tr>
+        </thead>
+        <tbody id="corpo-tabela"></tbody>
+    </table>
+
+</body>
+</html>
