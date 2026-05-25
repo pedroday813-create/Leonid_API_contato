@@ -26,7 +26,7 @@ export async function postContato(contato){
 
 }
 
-export async function putContato(IdleDeadline, contato){
+export async function putContato(id, contato){
     const options = {
         method: 'PUT',
         headers: {
@@ -34,9 +34,10 @@ export async function putContato(IdleDeadline, contato){
         },
         body: JSON.stringify(contato)
     }
-    const response = fetch(`${URL}/${id}`, options);
+    const response = await fetch(`${URL}/${id}`, options);
 
     if (!response.ok) throw new Error('Erro ao atualizar contato');
+    return response.json();
 }
 
 export async function deleteContato(id){

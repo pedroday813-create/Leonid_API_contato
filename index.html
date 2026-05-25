@@ -11,13 +11,20 @@
     <h1 class="titulo">Cosumindo API</h1>
 
     <section class="quadrados">
+        <input id="id-contato" class="campo" type="hidden">
         <input id="nome" class="campo" type="text" placeholder="Nome">
         <input id="email" class="campo" type="email" placeholder="Email">
         <input id="telefone" class="campo" type="text" placeholder="Telefone">
         <input id="endereco" class="campo" type="text" placeholder="Endereco">
+        <input id="url-foto" class="campo" type="text" placeholder="URL - Foto">
     </section>
 
     <button id="salvar" class="botao-salvar">Salvar</button>
+    <button id="atualizar" class="botao-salvar">Atualizar</button>
+    <button id="excluir" class="botao-salvar">Excluir</button>
+    <button id="limpar" class="botao-salvar">Limpar</button>
+
+
 
     <table class="tabela-contatos">
         <thead>
@@ -27,6 +34,7 @@
                 <th>Email</th>
                 <th>Telefone</th>
                 <th>Endereco</th>
+                <th>URL - Foto</th>
             </tr>
         </thead>
         <tbody id="corpo-tabela"></tbody>

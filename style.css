@@ -38,6 +38,7 @@ h1.titulo {
 
 .botao-salvar {
     margin-top: 30px;
+    margin-right: 10px;
     padding: 12px 32px;
     border: none;
     border-radius: 6px;
@@ -73,5 +74,18 @@ h1.titulo {
 
 .tabela-contatos td {
     color: #222222;
+}
+
+.tabela-contatos tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.tabela-contatos tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.tabela-contatos tbody tr.selecionada {
+    background-color: #c8e6c9;
+    font-weight: bold;
 }
 
